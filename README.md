@@ -14,7 +14,10 @@ Master-DA/
 │   └── Dataset/                    # Datos crudos y procesados (CSV)
 ├── 2. SQL/                         # Ejercicios SQL sobre la base de datos Sakila
 ├── 3. Python/                      # Katas de Python (ejercicios de práctica)
-├── 4. Pandas_Numpy/                # Proyecto de análisis con Pandas y Numpy
+├── 4. Pandas_Numpy/                # Proyecto EDA con Pandas y Numpy
+│   └── (notebook, datos de clientes y de campaña bancaria)
+├── 5. PowerBI/                     # Proyectos de Business Intelligence en Power BI
+│   └── datos proyecto 2/           # Datos de clientes, productos, pedidos y vendedores
 └── README.md
 ```
 
@@ -25,8 +28,9 @@ Este proyecto usa **Python 3.x** y, según el módulo, requiere:
 - pandas
 - numpy
 - jupyter
-- Excel (para abrir el dashboard `.xlsx`)
+- Excel (para abrir los archivos `.xlsx`)
 - MySQL o similar (para ejecutar las consultas de la base de datos Sakila)
+- Power BI Desktop (para abrir los archivos `.pbix`)
 
 Instalación rápida de las dependencias de Python:
 
@@ -45,8 +49,13 @@ Ejercicios de consultas SQL sobre el esquema de alquiler de películas Sakila (f
 ### 3️⃣ Python: Katas
 Serie de ejercicios ("katas") de práctica en Python para reforzar lógica de programación, estructuras de datos y buenas prácticas de código, disponibles tanto en `.py` como en `.ipynb`.
 
-### 4️⃣ Pandas & Numpy
-Proyecto de análisis de datos aplicando las librerías Pandas y Numpy para manipulación, limpieza y transformación de datos.
+### 4️⃣ Pandas & Numpy: EDA con Python
+Análisis exploratorio de datos (EDA) aplicando Pandas y Numpy sobre datos de clientes y de una campaña de marketing bancario, incluyendo limpieza, transformación y exploración de variables.
+
+### 5️⃣ Power BI: Proyectos de Business Intelligence
+Dos proyectos de visualización y análisis de datos en Power BI:
+- **Proyecto 1:** Panel sobre PIB y deuda.
+- **Proyecto 2:** Panel de ventas a partir de datos de clientes, productos, pedidos y vendedores.
 
 ## 🔄 Próximos Pasos
 
