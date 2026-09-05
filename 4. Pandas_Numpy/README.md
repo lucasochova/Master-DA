@@ -2,15 +2,23 @@
 
 Análisis exploratorio y temporal de una campaña de marketing bancario, con el objetivo de entender qué perfiles y qué momentos del tiempo se asocian con una mayor probabilidad de que un cliente contrate el depósito (`y`).
 
-## 📊 Dataset
+# EDA de Datos de Clientes
+
+Análisis exploratorio de un dataset de clientes, con el objetivo de entender su perfil (ingreso, composición del hogar, antigüedad, comportamiento web).
+
+## 📊 Datasets
 
 - **Archivo:** `Datos_Limpios.csv`
 - **Registros:** 42,285 clientes
 - **Periodo:** 2015-01-01 a 2019-12-31
 - **Variable objetivo:** `y` (`yes` / `no`) — si el cliente contrató o no el depósito
 
-**Variables principales:**
+- **Archivo:** `customer-details.xlsx`
+- **Registros:** 43,170 clientes (2012: 20,115 · 2013: 8,965 · 2014: 14,090)
+- **Hojas:** `2012`, `2013`, `2014`
 
+**Variables principales:**
+**Archivo:** `datos_limpios.csv`
 | Categoría | Columnas |
 |---|---|
 | Demográficas | `age`, `job`, `marital`, `education`, `grupo_edad` |
@@ -18,6 +26,15 @@ Análisis exploratorio y temporal de una campaña de marketing bancario, con el 
 | Campaña | `contact`, `duration`, `campaign`, `pdays`, `previous`, `poutcome` |
 | Contexto económico | `emp.var.rate`, `cons.price.idx`, `cons.conf.idx`, `euribor3m`, `nr.employed` |
 | Temporales / geográficas | `date`, `latitude`, `longitude` |
+
+**Variables principales:**
+
+| Categoría | Columnas |
+|---|---|
+| Financieras | `Income` |
+| Composición del hogar | `Kidhome`, `Teenhome` |
+| Comportamiento | `NumWebVisitsMonth` |
+| Temporales / identificación | `Dt_Customer`, `ID` |
 
 ## 🛠️ Herramientas
 
@@ -37,6 +54,13 @@ Antes del análisis visual, el dataset original (`bank-additional.csv`) pasó po
 4. **Segmentación por edad:** se creó la columna `grupo_edad` a partir de `age`, con los rangos `0-18`, `19-30`, `31-45`, `46-60` y `60+` (los valores faltantes se etiquetaron como `"Sin dato"`).
 5. **Normalización de fechas:** la columna `date` venía con el mes en español escrito con letras (ej. *"15-marzo-2017"*); se tradujo el nombre del mes a número y se convirtió a formato `datetime`, descartando las filas sin fecha válida.
 6. **Verificación final:** se volvió a correr `isnull().sum()` para confirmar que no quedaran nulos relevantes antes de pasar al análisis.
+
+## ----------------------------
+
+1. **Carga de datos:** se leyeron las 3 hojas del Excel (`2012`, `2013`, `2014`) y se unificaron en un solo DataFrame, agregando una columna `Anio` para conservar el origen de cada fila.
+2. **Limpieza de columnas:** se eliminó la columna índice residual (`Unnamed: 0`) que traía el Excel original.
+3. **Exploración inicial:** revisión de tipos de datos (`info()`) y estadísticas descriptivas (`describe()`).
+4. **Verificación de calidad:** conteo de nulos (`isnull().sum()`) y de IDs duplicados — el dataset no presenta nulos ni duplicados.
 
 ## 📁 Estructura del análisis
 
@@ -75,4 +99,6 @@ Antes del análisis visual, el dataset original (`bank-additional.csv`) pasó po
 - `EDA_python.ipynb` — notebook de exploración y limpieza de datos (genera `Datos_Limpios.csv`)
 - `Analisis-visual-de-datos.ipynb` — notebook con el análisis visual y temporal completoc
 - `Datos_Limpios.csv` — dataset ya limpio, utilizado en el análisis
+- `customer-details.xlsx` — datos originales
+- `analisis_customer_details.ipynb` — notebook con la carga, exploración inicial y primeras visualizaciones
 - `README.md` — este documento
