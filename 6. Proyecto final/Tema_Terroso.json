@@ -1,0 +1,21 @@
+{
+  "name": "Terroso",
+  "dataColors": ["#B8860B", "#6B4423", "#E3B448", "#A0522D", "#8C6D46", "#D9A441", "#4E342E", "#C68E5B"],
+  "background": "#FFFFFF",
+  "foreground": "#3E2C1C",
+  "tableAccent": "#B8860B",
+  "good": "#7A8B3A",
+  "neutral": "#D4A017",
+  "bad": "#A0391F",
+  "minimum": "#F3E2B3",
+  "center": "#D4A017",
+  "maximum": "#6B4423",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "color": "#3E2C1C" },
+    "label": { "fontFace": "Segoe UI", "color": "#5D4630" }
+  },
+  "visualStyles": {
+    "page": { "*": { "background": [{ "color": { "solid": { "color": "#FBF3E0" } }, "transparency": 0 }] } },
+    "*": { "*": { "title": [{ "fontColor": { "solid": { "color": "#3E2C1C" } } }] } }
+  }
+}
