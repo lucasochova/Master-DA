@@ -21,7 +21,6 @@ Cada año el informe publica una puntuación de felicidad por país (*Score*) ju
 ├── 2.Analisis/
 │   ├── Proyecto_Final.pbix      # Informe de Power BI
 │   └── Tema_Terroso.json        # Tema de colores (opcional)
-├── Tema_Terroso.json            # Copia del tema de colores
 └── README.md
 ```
 
@@ -114,3 +113,5 @@ Los gráficos marcados como «todos los años» ignoran el segmentador a propós
 
 - Lucas Ochova
 - [@lucasochova](https://github.com/lucasochova)
+
+## Para la resolucion del proyecto se utilizo la herramienta de IA Claude, quien aporto sugerencias, creo el tema de colores, acorde a lo solicitado, e impulso las ideas creativas que se tenian para el proyecto, asi como aporto calculos avanzados de DAX, que permitieron dar mayor alcance al informe.  
