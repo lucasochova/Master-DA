@@ -1,4 +1,4 @@
-# 6. Proyecto final: Felicidad mundial 2015-2019
+# Proyecto secundario: Felicidad mundial 2015-2019
 
 Análisis de los datos del **World Happiness Report** entre 2015 y 2019, con el objetivo de **mostrar los datos y las relaciones entre sus variables de la forma más clara posible**. El proyecto recorre el ciclo completo: datos crudos → limpieza y unificación en Python (ETL) → informe interactivo en Power BI.
 
@@ -9,11 +9,7 @@ Cada año el informe publica una puntuación de felicidad por país (*Score*) ju
 ## 🗂️ Estructura de la carpeta
 
 ```
-6. Proyecto final/
-├── 0. Datos crudos/
-│   ├── Happines-country/        # Datos usados: informes de 2015 a 2019 (CSV)
-│   ├── CO2/                     # Emisiones de CO2 (no se usa en este análisis)
-│   └── E-Comerce/               # Datos de comercio electrónico (no se usa en este análisis)
+99. proyecto secundario/
 ├── 1. ETL/
 │   ├── ETL.ipynb                # Notebook de limpieza y unificación
 │   ├── 2015.csv … 2019.csv      # Copias de los ficheros anuales con los que trabaja el notebook
@@ -23,6 +19,8 @@ Cada año el informe publica una puntuación de felicidad por país (*Score*) ju
 │   └── Tema_Terroso.json        # Tema de colores (opcional)
 └── README.md
 ```
+
+Los ficheros anuales originales están en `6. Proyecto final/0. Datos crudos/Happines-country/`. Esa carpeta de datos crudos es compartida con el proyecto principal (E-Commerce), así que aquí solo se guardan las copias con las que trabaja el notebook.
 
 ## 🔄 Pasos del proyecto
 
